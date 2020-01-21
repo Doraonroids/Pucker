@@ -3,18 +3,13 @@
 #include "map.h"
 #include <time.h>
 #include <cstdlib>
-class ghost :
-	public Entity
-{
+class ghost :public Entity{
 	private:
 		bool edible;
-		int lastmove;
+		short lastmove;
 	public:
 		ghost();
 		void move_rand(map&);
 		void reset();
-		//void move_cont();
-
-
 };
 

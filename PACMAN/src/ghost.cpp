@@ -15,58 +15,44 @@ void ghost::reset(){
 
 void ghost::move_rand(map& m)
 {
-	bool works = true;
-	bool lastworks = true;
-	int direction = 0;
-	while (works)
-	{
-
-		if (lastworks) {
-			direction = lastmove;
+	
+	short nextX = 0, nextY = 0;
+	short direction = lastmove;
+	while (true) {
+		switch (direction) {
+		case 0: nextY = getY() - 1; nextX = getX();     break;
+		case 1: nextY = getY() + 1; nextX = getX();     break;
+		case 2: nextY = getY();     nextX = getX() - 1; break;
+		case 3: nextY = getY();     nextX = getX() + 1; break;
+		}
+		if (m.getmapat(nextY, nextX) != '#') {
+			setY(nextY);
+			setX(nextX);
+			lastmove = direction;
+			break;
 		}
 		else {
 			direction = rand() % 4;
 		}
-		lastworks = false;
-		switch (direction)
-		{
-
-		case 0:
-			if (m.getmapat(getY() - 1,getX()) != '#')
-			{
-				setY(getY() - 1);
-				lastmove = 0;
-				works = false;
-				lastworks = true;
-			}
-			break;
-		case 1:
-			if (m.getmapat(getY() + 1, getX()) != '#')
-			{
-				setY(getY() + 1);
-				lastmove = 1;
-				works = false;
-				lastworks = true;
-			}
-			break;
-		case 2:
-			if (m.getmapat(getY(), getX()-1) != '#')
-			{
-				setX(getX() - 1);
-				lastmove = 2;
-				works = false;
-				lastworks = true;
-			}
-			break;
-		case 3:
-			if (m.getmapat(getY(), getX()+1) != '#')
-			{
-				setX(getX() + 1);
-				lastmove = 3;
-				works = false;
-				lastworks = true;
-			}
+	}
+	/*
+	int direction = (rand() % 5 == 0) ? rand() % 4 : lastmove;
+	while (true) {
+		int nextX, nextY;
+		switch (direction) {
+		case 0: nextY = getY() - 1; nextX = getX();     break;
+		case 1: nextY = getY() + 1; nextX = getX();     break;
+		case 2: nextY = getY();     nextX = getX() - 1; break;
+		case 3: nextY = getY();     nextX = getX() + 1; break;
+		}
+		if (m.getmapat(nextY, nextX) != '#') {
+			setY(nextY);
+			setX(nextX);
+			lastmove = direction;
 			break;
 		}
+		else
+			direction = rand() % 4;
 	}
+	*/
 }

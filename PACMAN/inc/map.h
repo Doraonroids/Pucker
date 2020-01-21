@@ -6,31 +6,27 @@
 #include <string>
 #include <vector>
 
-class map
-{
+class map{
 	private:
-		int width, height, length;
+		short width, height, length;
 		std::string filename;
 		std::vector<char> map_vec;
-		std::vector<char> orig;
+	
 	public:
-		
 		map();
-
 		void gotoxy(short, short) const;// in order(x,y)
-		int getWidth() const;
-		int getHeight() const;
-		int getLength() const;
+		short getWidth() const;
+		short getHeight() const;
+		short getLength() const;
+
 		std::string getFilename() const;
-		char getmapat(int, int) const; //in order (y,x)
-		void setWidth(int);
-		void setHeight(int);
+		char getmapat(short, short) const; //in order (y,x)
+		void setWidth(short);
+		void setHeight(short);
 		void setFilename(std::string);
-		void setmapat(int, int, char);
-		//void fillWidthHeight();
+		void setmapat(short, short, char);
 		void fillmap();
 		void ResetMap();
 		void ShowMap();
-
 };
 

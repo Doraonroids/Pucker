@@ -5,10 +5,9 @@ Entity::Entity()
 	y = 0;
 	lives = 1;
 	symbol = '%';
-
 }
 
-Entity::Entity(int X, int Y, int L, char S)
+Entity::Entity(short X, short Y, short L, char S)
 {
 	x = X;
 	y = Y;
@@ -16,17 +15,17 @@ Entity::Entity(int X, int Y, int L, char S)
 	symbol = S;
 }
 
-void Entity::setX(int val)
+void Entity::setX(short val)
 {
 	x = val;
 }
 
-void Entity::setY(int val)
+void Entity::setY(short val)
 {
 	y = val;
 }
 
-void Entity::setLives(int val)
+void Entity::setLives(short val)
 {
 	lives = val;
 }
@@ -36,17 +35,17 @@ void Entity::setSymbol(char val)
 	symbol = val;
 }
 
-int Entity::getX() const
+short Entity::getX() const
 {
 	return x;
 }
 
-int Entity::getY() const
+short Entity::getY() const
 {
 	return y;
 }
 
-int Entity::getLives() const
+short Entity::getLives() const
 {
 	return lives;
 }
@@ -70,10 +69,8 @@ void Entity::display() const {
 void Entity::display(char c) const {
 	gotoxy(x, y);
 	std::cout << c;
-	
 }
 
 void Entity::replace() const {
 	gotoxy(x, y);
-	
 }
