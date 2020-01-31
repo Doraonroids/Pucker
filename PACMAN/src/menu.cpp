@@ -75,12 +75,13 @@ void menu::goToOption(short in)
 	}
 }
 
+
 void menu::clearScreen() const
 {
 	HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
-	COORD position = {0, 0};
+	COORD position = { 0, 0 };
 	SetConsoleCursorPosition(hStdout, position);
-	for (short j = 0; j < 50; j++) {
+	for (short j = 0; j < 70; j++) {
 		for (short i = 0; i < 50; i++) {
 			position = { i, j };
 			std::cout << " ";
@@ -89,7 +90,6 @@ void menu::clearScreen() const
 	position = { 0,0 };
 	SetConsoleCursorPosition(hStdout, position);
 }
-
 void menu::displayLeaderBoard() const {
 	std::ifstream INF(filename);
 	std::string line = "";
@@ -112,26 +112,26 @@ void menu::displayLeaderBoard() const {
 
 void menu::addtoLeaderBoard(short score) const {
 	bool test = true;
-	std::string name = "";
-	std::string line = "",line2 = "";
+	std::string name = "", line = "", line2 = "";
 	int width = 0, ct = 0;
 	do {
 		std::cout << "Enter a 4 character name for Leader Board\n";
 		std::cin >> name;
-		
+
 	} while (name.length() > 4);
+	unsigned int x = 4 - name.length();
 	if (name.length() < 4) {
-		for (unsigned int k = 0; k < 4 - name.length(); k++) {
+		for (unsigned int k = 0; k < x; k++) {
 			name += " ";
 		}
 	}
 	std::fstream F;
-	F.open(filename, std::fstream:: in | std::fstream::out);
+	F.open(filename, std::fstream::in | std::fstream::out);
 	while (std::getline(F, line)) {
-		 *(leaderboard + ct) = line;
-		 ct++;
+		*(leaderboard + ct) = line;
+		ct++;
 	}
-	for (int i = 0; i < 20; i+=2) {
+	for (int i = 0; i < 20; i += 2) {
 		line = *(leaderboard + i);
 		line2 = *(leaderboard + i + 1);
 		if (score > std::stoi(line2) && test) {
@@ -147,7 +147,7 @@ void menu::addtoLeaderBoard(short score) const {
 	for (int j = 0; j < 20; j++) {
 		ofs << *(leaderboard + j) << "\n";
 	}
-	
+
 	ofs.close();
 }
 
