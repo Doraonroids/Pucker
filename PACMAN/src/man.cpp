@@ -35,7 +35,7 @@ void man::displayLives(map& m)
 	std::cout << "Lives:                     " ;
 	gotoxy(m.getWidth() + 8, m.getHeight() - 1);
 	for (short i = this->getLives(); i > 0; i--) {
-		std::cout << " @ ";
+		std::cout << "@ ";
 	}
 }
 

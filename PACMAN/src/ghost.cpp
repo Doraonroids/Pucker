@@ -35,24 +35,4 @@ void ghost::move_rand(map& m)
 			direction = rand() % 4;
 		}
 	}
-	/*
-	int direction = (rand() % 5 == 0) ? rand() % 4 : lastmove;
-	while (true) {
-		int nextX, nextY;
-		switch (direction) {
-		case 0: nextY = getY() - 1; nextX = getX();     break;
-		case 1: nextY = getY() + 1; nextX = getX();     break;
-		case 2: nextY = getY();     nextX = getX() - 1; break;
-		case 3: nextY = getY();     nextX = getX() + 1; break;
-		}
-		if (m.getmapat(nextY, nextX) != '#') {
-			setY(nextY);
-			setX(nextX);
-			lastmove = direction;
-			break;
-		}
-		else
-			direction = rand() % 4;
-	}
-	*/
 }

@@ -141,6 +141,9 @@ void menu::clearScreen() const
 void menu::displayLeaderBoard() const {
 	std::ifstream INF(filename);
 	std::string line = "";
+	if (!INF) {
+		std::cout << "ERROR " << filename << " COULD NOT BE OPENED!";
+	}
 	std::cout << "NAME" << std::right << std::setw(12)  << "Score";
 	std::cout << "\n================\n";
 	for (int i = 0; i < 20; i++) {
@@ -175,6 +178,9 @@ void menu::addtoLeaderBoard(short score) const {
 	}
 	std::fstream F;
 	F.open(filename, std::fstream::in | std::fstream::out);
+	if (!F) {
+		std::cout << "ERROR " << filename << " COULD NOT BE OPENED!";
+	}
 	while (std::getline(F, line)) {
 		*(leaderboard + ct) = line;
 		ct++;

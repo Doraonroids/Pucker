@@ -92,6 +92,9 @@ void map::fillmap()
 {
 	std::ifstream INF(filename);
 	std::string line = "";
+	if (!INF) {
+		std::cout << "ERROR " << filename << " COULD NOT BE OPENED!";
+	}
 	while (std::getline(INF, line)) {
 		for (short i = 0; i < width; i++) {
 			map_vec.push_back(line[i]);
