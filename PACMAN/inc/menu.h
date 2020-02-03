@@ -13,7 +13,7 @@ private:
 	static std::string choices0[4];
 	static std::string choices2[6];
 	std::string* leaderboard;
-	short lastOption, startLives, numGhosts;
+	short lastOption, startLives, numGhosts, ghostspeed, speed;
 	std::string filename;
 	public:
 		menu();
@@ -26,5 +26,5 @@ private:
 		void addtoLeaderBoard(short) const;
 		std::string getFilename() const;
 		void setFilename(std::string);
-		void gameLoop(short);
+		void gameLoop();
 };

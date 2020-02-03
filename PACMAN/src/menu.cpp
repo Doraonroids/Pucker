@@ -15,6 +15,8 @@ std::string menu::choices2[6] = {
 menu::menu()
 {
 	numGhosts = 4;
+	speed = 50;
+	startLives = 3;
 	filename = "leaderboard.txt";
 	leaderboard = new std::string[20];
 	goToOption(0);
@@ -38,38 +40,84 @@ void menu::displayChoices2() const
 }
 void menu::goToOption(short in)
 {
+	clearScreen();
 	switch (in) {
 		case 0:
-			clearScreen();
 			displayChoices0();
 			break;
 		case 1: 
-			clearScreen();
-			gameLoop(numGhosts);
+			gameLoop();
 			break;
-		case 2:
-			clearScreen();
-			std::cout << "SORRY THIS FUNCTION IS CURRENTLY UNAVAILABLE\nTHE SCREEN WILL AUTOMATICALLY RETURN TO THE MAIN MENU\n";
+		case 2: {
+			/*std::cout << "SORRY THIS FUNCTION IS CURRENTLY UNAVAILABLE\nTHE SCREEN WILL AUTOMATICALLY RETURN TO THE MAIN MENU\n";
 			Sleep(10000);
 			goToOption(0);
-			//go to settings page
-				//things they should edit
-			/*
-			1-Number of start lives
-			2-Number of ghosts
-			3-Speed of Pacman
-			4-Speed of Ghosts
-			5-Change map file name
-			6-Go Back
 			*/
-			break;
-		case 3: //display leader board
+			short set;
+			displayChoices2();
+			std::cin >> set;
 			clearScreen();
+			switch (set) {
+				case 1:
+
+					do {
+						
+						std::cout << "Please Enter number of start lives [1,6]:\n";
+						std::cin >> startLives;
+					}while (startLives < 0 && startLives > 7);
+					std::cout << "\nLives is set to " << startLives;
+					Sleep(3000);
+					goToOption(2);
+					break;
+				case 2:
+					do {
+						std::cout << "Please Enter number of ghosts [1,4]:\n";
+						std::cin >> numGhosts;
+					} while (numGhosts < 0 && numGhosts > 5);
+					std::cout << "\nGhosts is set to " << numGhosts;
+					Sleep(3000);
+					clearScreen();
+					goToOption(2);
+					break;
+				case 3:
+					do {
+						std::cout << "Please Enter speed [30,200]:\n";
+						std::cin >> ghostspeed;
+					} while (speed < 0 && speed > 5);
+					std::cout << "\nOverall speed is set to " << speed;
+					Sleep(3000);
+					clearScreen();
+					goToOption(2);
+					break;
+				case 4:
+					do {
+						std::cout << "Please Enter ghost speed [1,4]:\n";
+						std::cin >> ghostspeed;
+					} while (ghostspeed < 0 && ghostspeed > 5);
+					std::cout << "\nGhost speed is set to " << ghostspeed;
+					Sleep(3000);
+					clearScreen();
+					goToOption(2);
+					break;
+				case 5:
+					std::cout << "Please Enter name of leaderboard file:\n";
+					std::cin >> filename;
+					std::cout << "File name is set to: " << filename;
+					Sleep(3000);
+					clearScreen();
+					goToOption(2);
+					break;
+				case 6:
+					goToOption(0);
+					break;
+			}
+			break; }
+		case 3: //display leader board
 			displayLeaderBoard();
 			displayChoices0();
 			break;
 		case 4: //quit game
-			clearScreen();
+			delete[] leaderboard;
 			exit(0);
 			break;
 	}
@@ -159,8 +207,8 @@ void menu::setFilename(std::string f) {
 	filename = f;
 }
 
-void menu::gameLoop(short numGhosts) {
-	long long int frame = 0;
+void menu::gameLoop() {
+	unsigned long long int frame = 0;
 	srand(time(0));
 	bool running = true;
 	bool running2 = true;
@@ -174,7 +222,7 @@ void menu::gameLoop(short numGhosts) {
 	
 	map h;
 	h.fillmap();
-
+	player1.setLives(startLives);
 	while (running2) {
 		running = true;
 		h.ShowMap();
@@ -215,6 +263,7 @@ void menu::gameLoop(short numGhosts) {
 				player1.move_right(h);
 			}
 			player1.displayPoints(h);
+
 			if (player1.getDotsate() == 215) {
 				clearScreen();
 				h.ResetMap();
@@ -284,7 +333,8 @@ void menu::gameLoop(short numGhosts) {
 					break;
 				}
 			}
-			Sleep(50);
+			//this sleep sets speed of pacman AND ghosts
+			Sleep(speed);
 			
 			frame++;
 		}
