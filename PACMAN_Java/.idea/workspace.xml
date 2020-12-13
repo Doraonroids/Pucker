@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:12" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fc9fbdb4-14f1-45c3-aefc-899844ffc017" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -18,17 +51,87 @@
     </option>
   </component>
   <component name="ProjectId" id="1lbw9UrOsbeR98Mvx3aHirIdOQ1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ECE1140_project_butter/CTC/TEST_02" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Zachary\Documents\GitHub\Pucker\PACMAN_Java\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Zachary\Documents\GitHub\Pucker\PACMAN_Java\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Entity_test.testSetSymbol">
+    <configuration name="Entity_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PACMAN_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Entity_test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Entity_test.testSetSymbol" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PACMAN_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Entity_test" />
+      <option name="METHOD_NAME" value="testSetSymbol" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Entity_test.testSetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PACMAN_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Entity_test" />
+      <option name="METHOD_NAME" value="testSetters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Entity_test.testSetSymbol" />
+        <item itemvalue="JUnit.Entity_test" />
+        <item itemvalue="JUnit.Entity_test.testSetters" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -38,7 +141,53 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607878951790</updated>
+      <workItem from="1607878952918" duration="3975000" />
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="344" y="286" key="#Project_Structure" timestamp="1607878977431">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="344" y="286" key="#Project_Structure/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607878977431" />
+    <state x="1126" y="473" key="FileChooserDialogImpl" timestamp="1607880352476">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1126" y="473" key="FileChooserDialogImpl/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607880352476" />
+    <state width="2280" height="352" key="GridCell.Tab.0.bottom" timestamp="1607882936669">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2280" height="352" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607882936669" />
+    <state width="2280" height="352" key="GridCell.Tab.0.center" timestamp="1607882936669">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2280" height="352" key="GridCell.Tab.0.center/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607882936669" />
+    <state width="2280" height="352" key="GridCell.Tab.0.left" timestamp="1607882936669">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2280" height="352" key="GridCell.Tab.0.left/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607882936669" />
+    <state width="2280" height="352" key="GridCell.Tab.0.right" timestamp="1607882936669">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2280" height="352" key="GridCell.Tab.0.right/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607882936669" />
+    <state x="1050" y="610" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1607880490093">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1050" y="610" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607880490093" />
+    <state x="2560" y="-144" width="1096" height="1323" key="dock-window-1" timestamp="1607880893409">
+      <screen x="2560" y="-144" width="1080" height="1880" />
+    </state>
+    <state x="2560" y="-144" width="1096" height="1323" key="dock-window-1/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607880893409" />
   </component>
 </project>
