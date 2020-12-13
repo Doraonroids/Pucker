@@ -33,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -64,9 +65,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ECE1140_project_butter/CTC/TEST_02" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../FXGL-11.12/fxgl-11.12-uber.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -77,7 +78,33 @@
       <recent name="C:\Users\Zachary\Documents\GitHub\Pucker\PACMAN_Java\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Entity_test.testSetSymbol">
+  <component name="RunManager" selected="Application.PuckerApp">
+    <configuration name="PuckerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.PuckerApp" />
+      <module name="PACMAN_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.menu" />
+      <module name="PACMAN_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Entity_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PACMAN_Java" />
       <extension name="coverage">
@@ -127,9 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Entity_test.testSetSymbol" />
-        <item itemvalue="JUnit.Entity_test" />
-        <item itemvalue="JUnit.Entity_test.testSetters" />
+        <item itemvalue="Application.PuckerApp" />
+        <item itemvalue="Application.menu" />
+        <item itemvalue="JUnit.MyEntity_test.testSetSymbol" />
+        <item itemvalue="JUnit.MyEntity_test" />
+        <item itemvalue="JUnit.MyEntity_test.testSetters" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607878951790</updated>
-      <workItem from="1607878952918" duration="6232000" />
+      <workItem from="1607878952918" duration="14099000" />
     </task>
     <servers />
   </component>
@@ -161,26 +190,42 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="344" y="286" key="#Project_Structure/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607878977431" />
-    <state x="1126" y="473" key="FileChooserDialogImpl" timestamp="1607880352476">
+    <state x="1151" y="424" width="720" height="568" key="#com.intellij.ide.util.MemberChooser" timestamp="1607892268966">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1126" y="473" key="FileChooserDialogImpl/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607880352476" />
-    <state width="2280" height="352" key="GridCell.Tab.0.bottom" timestamp="1607882936669">
+    <state x="1151" y="424" width="720" height="568" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607892268966" />
+    <state x="2829" y="-30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607891144290">
+      <screen x="2560" y="-144" width="1080" height="1880" />
+    </state>
+    <state x="2829" y="-30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607891144290" />
+    <state x="1143" y="588" key="DetectedRootsChooserDialog" timestamp="1607886847252">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2280" height="352" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607882936669" />
-    <state width="2280" height="352" key="GridCell.Tab.0.center" timestamp="1607882936669">
+    <state x="1143" y="588" key="DetectedRootsChooserDialog/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607886847252" />
+    <state x="1126" y="473" key="FileChooserDialogImpl" timestamp="1607886949891">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2280" height="352" key="GridCell.Tab.0.center/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607882936669" />
-    <state width="2280" height="352" key="GridCell.Tab.0.left" timestamp="1607882936669">
+    <state x="1126" y="473" key="FileChooserDialogImpl/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607886949891" />
+    <state width="2280" height="264" key="GridCell.Tab.0.bottom" timestamp="1607891153342">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2280" height="352" key="GridCell.Tab.0.left/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607882936669" />
-    <state width="2280" height="352" key="GridCell.Tab.0.right" timestamp="1607882936669">
+    <state width="2280" height="264" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607891153342" />
+    <state width="2280" height="264" key="GridCell.Tab.0.center" timestamp="1607891153342">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2280" height="352" key="GridCell.Tab.0.right/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607882936669" />
+    <state width="2280" height="264" key="GridCell.Tab.0.center/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607891153342" />
+    <state width="2280" height="264" key="GridCell.Tab.0.left" timestamp="1607891153342">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2280" height="264" key="GridCell.Tab.0.left/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607891153342" />
+    <state width="2280" height="264" key="GridCell.Tab.0.right" timestamp="1607891153342">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2280" height="264" key="GridCell.Tab.0.right/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607891153342" />
+    <state x="826" y="292" key="SettingsEditor" timestamp="1607891121090">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="826" y="292" key="SettingsEditor/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607891121090" />
     <state x="1050" y="610" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1607880490093">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -189,5 +234,13 @@
       <screen x="2560" y="-144" width="1080" height="1880" />
     </state>
     <state x="2560" y="-144" width="1096" height="1854" key="dock-window-1/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607885226230" />
+    <state x="2560" y="-144" width="1096" height="1558" key="dock-window-2" timestamp="1607889293845">
+      <screen x="2560" y="-144" width="1080" height="1880" />
+    </state>
+    <state x="2560" y="-144" width="1096" height="1558" key="dock-window-2/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607889293845" />
+    <state x="728" y="338" key="new project wizard" timestamp="1607885618472">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="728" y="338" key="new project wizard/0.0.2560.1400/-1600.161.1600.860/2560.-144.1080.1880@0.0.2560.1400" timestamp="1607885618472" />
   </component>
 </project>
