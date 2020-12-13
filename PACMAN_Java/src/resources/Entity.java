@@ -72,4 +72,8 @@ public class Entity {
 
     }
 
+    public void move_up(){}
+    public void move_down(){}
+    public void move_left(){}
+    public void move_right(){}
 }
