@@ -13,7 +13,7 @@ public class PuckerApp extends Application {
         primaryStage.setTitle("test");
 
         GameScene maze = new GameScene();
-
+        maze.fill();
 
         primaryStage.setScene(maze);
 
